@@ -2,6 +2,7 @@ import * as React from "react";
 import "./App.css";
 
 import EventPractice from "./EventPractice";
+import FunctionalComponent from "./FunctionalComponent";
 import IterationSample from "./IterationSample";
 import LifeCycleSample from "./LifeCycleSample";
 import MyComponent from "./MyComponent";
@@ -22,6 +23,7 @@ class App extends React.Component<{}, IAppState> {
   public render() {
     return (
       <React.Fragment>
+        <FunctionalComponent name="이름이다" />
         <button onClick={this.handleClick}>랜덤 색상</button>
         <LifeCycleSample color={this.state.color} />
         <IterationSample />
